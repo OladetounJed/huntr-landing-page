@@ -66,6 +66,12 @@ Components
   }
 }
 
+.logo {
+  font-size: 1.6em;
+    font-weight: 900;
+    color: $primary-color-pink;
+}
+
 .header {
   &__illust {
     position: absolute;
@@ -88,11 +94,7 @@ Components
     }
   }
 
-  &__logo {
-    font-size: 1.2em;
-    font-weight: 900;
-    color: $primary-color-pink;
-  }
+  
 
   &__link {
     padding-left: 2em;
@@ -119,7 +121,6 @@ Components
   }
   &__paragraph {
     width: 70%;
-    font-size: 0.8em;
     line-height: 1.8;
   }
 }
@@ -281,13 +282,10 @@ Components
   margin-top: 10em;
 
   &__logo {
-    font-size: 1.8em;
     text-align: center;
     margin-bottom: 1.5em;
-    font-weight: 900;
-    color: $primary-color-pink;
   }
-  p {
+  &__link {
     line-height: 2em;
   }
   &__icon {
@@ -303,6 +301,10 @@ Mobile Responsivness
 -----*/
 
 @media (max-width: 990px) {
+
+  .logo {
+    font-size: 2em;
+  }
   body {
     font-size: 10px;
     width: 100%;
@@ -398,7 +400,8 @@ Mobile Responsivness
     flex-direction: column;
     text-align: center;
 
-    p {
+    &__link {
+      font-size: 1.7em;
       padding-top: 1em;
       line-height: 3em;
     }
