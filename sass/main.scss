@@ -68,8 +68,8 @@ Components
 
 .logo {
   font-size: 1.6em;
-    font-weight: 900;
-    color: $primary-color-pink;
+  font-weight: 900;
+  color: $primary-color-pink;
 }
 
 .header {
@@ -93,8 +93,6 @@ Components
       z-index: 1;
     }
   }
-
-  
 
   &__link {
     padding-left: 2em;
@@ -209,7 +207,7 @@ Components
     -moz-column-gap: 40px;
     column-gap: 200px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-auto-rows: 40px;
   }
 
@@ -301,7 +299,6 @@ Mobile Responsivness
 -----*/
 
 @media (max-width: 990px) {
-
   .logo {
     font-size: 1.5em;
   }
@@ -339,6 +336,10 @@ Mobile Responsivness
   }
 
   .filter {
+    &__form {
+      width: 80%;
+      margin: auto;
+    }
     &__search {
       width: 60%;
     }
@@ -354,7 +355,7 @@ Mobile Responsivness
       margin: 2em 0;
       text-align: center;
     }
-      &__con {
+    &__con {
       grid-row-gap: 20px;
     }
     &__child {
@@ -404,6 +405,35 @@ Mobile Responsivness
       font-size: 1.4em;
       padding-top: 1em;
       line-height: 3em;
+    }
+  }
+}
+
+@media (min-width: 500px) and (max-width: 990px) {
+  .header {
+    &__illust {
+      width: 70%;
+    }
+    &__info {
+      margin-top: 40%;
+    }
+  }
+
+  .filter {
+    &__form {
+      width: 50%;
+    }
+  }
+
+  .job {
+    &__con {
+      column-gap: 50px;
+    }
+  }
+
+  .category {
+    &__con {
+      column-gap: 100px;
     }
   }
 }

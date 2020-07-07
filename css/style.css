@@ -241,6 +241,9 @@ Mobile Responsivness
       display: none; }
     .header__navbar-middle {
       display: none; }
+  .filter__form {
+    width: 80%;
+    margin: auto; }
   .filter__search {
     width: 60%; }
   .filter__button {
@@ -280,3 +283,15 @@ Mobile Responsivness
       font-size: 1.4em;
       padding-top: 1em;
       line-height: 3em; } }
+
+@media (min-width: 500px) and (max-width: 990px) {
+  .header__illust {
+    width: 70%; }
+  .header__info {
+    margin-top: 40%; }
+  .filter__form {
+    width: 50%; }
+  .job__con {
+    column-gap: 50px; }
+  .category__con {
+    column-gap: 100px; } }
