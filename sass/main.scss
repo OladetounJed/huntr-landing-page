@@ -149,7 +149,7 @@ Components
   }
 
   &__con {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 2em auto;
     grid-row-gap: 40px;
     grid-column-gap: 40px;
@@ -436,4 +436,29 @@ Mobile Responsivness
       column-gap: 100px;
     }
   }
+}
+
+@media (min-width: 990px) and (max-width: 1400px) {
+  .job {
+    &__con {
+      max-width: 900px;
+      column-gap: 50px;
+    }
+  }
+
+  .category {
+    &__con {
+      max-width: 900px;
+      column-gap: 100px;
+    }
+  }
+}
+
+@media (min-width: 2000px) and (max-width: 4000px) {
+.header {
+
+  &__illust {
+    width: 30%;
+  }
+}
 }
